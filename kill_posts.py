@@ -3,7 +3,7 @@ import pandas as pd
 from wonderwords import RandomWord
 from time import sleep
 
-delete = True # Set to False if running first time and wait 30 days for overwrite to propagate
+delete = False # Set to True if running second time after you waited 30 days for overwrite to propagate
 
 df = pd.read_csv('posts.csv')
 reddit = praw.Reddit(
